@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Estrutura de laços: for in
+    </h1>
+    <h3>
+        
+    </h3>
+    <!-- -->
+</head>
+
+<body>
+    <script>
+      var listaConvidados = Array();
+      listaConvidados['a'] = "jorge";
+      listaConvidados[10] = "Renata";
+      listaConvidados['zebra'] = "Karla";
+      listaConvidados[-1] = "Monica";
+      listaConvidados[true] = "Carlos";
+
+
+      console.log(listaConvidados);
+      for(var x in listaConvidados) {
+        console.log("indice: " + x + " valor: " + listaConvidados[x]);
+      }
+    </script>
+</body>
+
+</html>

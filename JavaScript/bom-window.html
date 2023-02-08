@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>Elementos BOM</h1>
+</head>
+<!---->
+
+<body>
+    <button onclick="abrirPopUp()" type="button" style="background-color: aquamarine;">Abrir janela</button>
+    <button onclick="fecharPopUp()" type="button" style="background-color: rgb(194, 140, 140);">Fechar janela</button>
+    <button onclick="window.print()" type="button" style="background-color: antiquewhite;">Imprimir janela</button>
+    <script>
+
+        var janela;
+        function abrirPopUp(){
+            /*parâmentros opcionais (URL(pode ser uma referência interna, ou seja que esteja na aplicação, ou externa como está sendo feito), 
+            nome, especificações, substituir), todos são opcionais
+            */
+            janela = window.open("http://www.google.com","NovaJanela","width=200px, height=150" );
+        }
+        function fecharPopUp(){
+            janela.close();
+        }
+    </script>
+</body>
+
+</html>

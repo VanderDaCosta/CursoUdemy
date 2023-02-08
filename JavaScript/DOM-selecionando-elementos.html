@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Elementos DOM
+    </h1>
+    <h3>
+        Selecionando Elementos
+    </h3>
+</head>
+
+<body>
+    <!--TODAS ESSAS AÇÕES PODEM SER COMBINADAS UMAS COM AS OUTRAS, AS OPÇÕES SÃO INFINITAS -->
+
+    <!-- getElementById() - seleciona e retorna o elemento do HTML pelo seu ID, que é uma identificação única para o elemento-->
+    <!-- getElementsByTagName() - seleciona e retorna o elemento do HTML pelo nome da TAG -->
+    <!-- getElementsByClassName() - seleciona e retorna o elemtento do HTML pela sua CLASS -->
+    <!-- getElementsByName() - seleciona e retorna o elemento do HTML pelo seu NAME-->
+
+    <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome" /><br />
+    <input type="text" placeholder="Digite sua idade" id="idade_usuario" class="campo_textow" name="idade" /><br />
+    <input type="text" placeholder="Digite seu endereço" id="endereco_usuario" class="campo_texto" name="endereco" /><br />
+    <input type="text" placeholder="Digite sua roupa" id="roupa_usuario" class="campo_texto" name="roupa" />
+
+    <script>
+        //console.log(document.getElementById("nome_usuario"));
+        //console.log(document.getElementsByTagName("input"));
+        //console.log(document.getElementsByClassName("campo_textow"));
+        console.log(document.getElementsByName("roupa"));
+    </script>
+</body>
+
+</html>

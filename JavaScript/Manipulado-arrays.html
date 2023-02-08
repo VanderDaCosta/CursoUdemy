@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Manipulando Arrays 
+    </h1>
+    <!---->
+</head>
+
+<body>
+
+    <script>
+        var lista_frutas =Array('Banana', 'Maçã');
+        document.write("ARRAY inicial: " + lista_frutas);
+        document.write("<hr />")
+        // adicionar elementos nesse ARRAY
+        
+        //para incluir um elemento no final do ARRAY
+        lista_frutas.push('Uva');
+        document.write( "incluindo um elemento no final do ARRAY: "+ lista_frutas + '<br />');
+
+        //para incluir um elemento no inicio do ARRAY
+        lista_frutas.unshift('Laranja');
+        document.write( "incluindo um elemento no inicio do ARRAY: " + lista_frutas + '<br />');
+
+        //para excluir um elemento no final do ARRAY
+        lista_frutas.pop();
+        document.write( "excluindo um elemento no final do ARRAY: " + lista_frutas + '<br />');
+
+        //para excluir um elemento no inicio do ARRAY
+        lista_frutas.shift();
+        document.write("excluindo um elemento no inicio do ARRAY: " + lista_frutas + '<br />');
+    </script>
+</body>
+
+</html>

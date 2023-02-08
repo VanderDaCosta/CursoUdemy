@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>Tratamento de erros</h1>
+</head>
+<!--
+    try - tente
+    catch - pegar 
+    finally - finalmente
+    throw - lançar
+-->
+
+<body>
+    <script>
+        
+        //Netflix
+        let video = Array();
+
+        video[1] = Array();
+        video[1]['nome'] = 'Naruto';
+        video[1]['categoria'] = 'Anime';
+
+        //função para recuperar o video do servidor da Netfix
+        function getVideo(video) {
+            try {
+                //logica
+                //http  
+                console.log(video[0]['nome']);
+            } catch(erro) {
+                tratarErro(erro);
+                console.log("Agora sim podemos tratar esse erro");
+                throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso agora!!');
+            } finally {
+                console.log('Sempre passa por aqui quando for (TRY / CATCH)');
+            }
+            console.log('A aplicação não morreu');
+        }
+
+        function tratarErro(erro) {
+            //logica para registrar o erro no servidor 
+            console.log(erro);
+        }
+
+        getVideo(video);
+    </script>
+</body>
+
+</html>

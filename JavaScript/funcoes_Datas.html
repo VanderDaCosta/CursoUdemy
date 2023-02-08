@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Manipulação de data
+    </h1>
+    <script>
+        var data = new Date(); {
+            /*  -> O METODO GET É PARA PEGAR DADOS
+                .getDate() - é responsavel por informar o dia que estamos fazendo o requerimento 
+                .getMonth() - é responsavel por informar o mês que estamos fazendo o requerimento,
+                    porém ele faz a contagem do mês de 0-11, então para se aplicar ao nosso contexto, temos que somar com o numero 1
+                .getFullYear - é responsavel por informar o ano que estamos fazendo o requerimento 
+
+                -> O METODO SET É PARA SETAR OS DADOS
+            */
+        }
+        //document.write(data.getDate() + ' / ' + '0' + (data.getMonth() + 1) + ' / ' + data.getFullYear());
+        //11/01/2023
+
+        //remover / adicionar dias
+        document.write(data.toString()); //Estamos convertendo o objeto data em String
+        data.setDate(data.getDate() + 1);
+        document.write("<br />" + "<hr />" + "<br />");
+
+        document.write(data.toString());
+        document.write("<br />" + "<hr />" + "<br />");
+
+        //remover / adicionar meses
+        data.setMonth(data.getMonth() + 5);
+        document.write(data.toString());
+        document.write("<br />" + "<hr />" + "<br />");
+
+        //remover / adicionar anos
+        data.setFullYear(data.getFullYear() + 40);
+        document.write(data.toString());
+        document.write("<br />" + "<hr />" + "<br />");
+
+        // Contagem de dias entre datas
+        // para o objeto Date tem umas regras que tem que ser respeitadas new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
+        var data1 = new Date(2022, 12, 13);
+        var data2 = new Date(2023, 2, 13);
+
+        document.write(data1.toString() + "<br />");
+        document.write(data2.toString());
+        document.write("<br />" + "<hr />" + "<br />");
+
+        //convertendo as datas para algo que possa ser calculado
+        //metodo .getTime() - ele recupera os milissegundos da data 1/1/1970, até a data informada
+        document.write(data1.getTime() + "<br />");
+        document.write(data2.getTime());
+        document.write("<br />" + "<hr />" + "<br />");
+
+        //encontrar a quantidade de milissegundos entre data1 e data2
+        //o metodo Math.abs é para retornar o valor positivo dos numeros calculados
+        var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime());
+        document.write(milissegundosEntreDatas);
+        document.write("<br />" + "<hr />" + "<br />");
+
+        // 1 dia = 24 horas = 60 minutos = 60 segundos = 1000 milissegundos
+        var milissegundosPordia = (1 * 24 * 60 * 60 * 100);
+        document.write(" 1 dia tem: " + milissegundosPordia + " milissegundos");
+        document.write("<br />" + "<hr />" + "<br />");
+
+        // diferença de dias entre as datas
+        document.write("A diferença de data1 e data2 é de " + Math.ceil(milissegundosEntreDatas / milissegundosPordia) + " dias");
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>Desafio - Operadores Lógicos</h1>
+    <script>
+        var idade = parseInt (prompt("Qual sua idade?"));
+
+        if (idade > 0 && idade < 15) {
+            document.write("Com essa idade você é uma criança");
+        } else if (idade >= 15 && idade < 30) {
+            document.write("Com essa idade você é um jovem");
+        } else if (idade >= 30 && idade < 60) {
+            document.write("Com essa idade você é um adulto");
+        } else if (idade >= 60 && idade <= 100) {
+            document.write("Com essa idade você é um idoso");
+        } else if(idade > 100 && idade < 120){
+            document.write("Com essa idade você era pra ter morrido");
+        }else{
+            alert("Que porra de idade é essa?");
+            document.write("Maluco demais!")
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

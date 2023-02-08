@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+        {
+            /*
+                         quando eu faço esse requerimento, por padrão ela vem no tipo String
+                         e como estamos querendo somar se não fizermos a alteração,
+                         o programa vai concatenar no lugar de somar.
+            */
+        }
+        var alerta = alert("Vou pedir dois numeros, e espero que você coloque-os");
+        var variavel1 = prompt("Digite algum número");
+        var variavel2 = prompt("Digite outro número");
+
+        variavel1 = parseInt(variavel1);
+        variavel2 = parseInt(variavel2);
+        // para fazer a operação contrária use assim "document.write(variavel1.toString()"
+        
+        {
+            /*
+            Desse jeito garantimos que o valro que recebemos seja
+            somado e não concatenado, pois estamos garantindo
+            que o programa veja esses valores como number!
+            */
+        }
+
+        document.write(variavel1 + variavel2);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

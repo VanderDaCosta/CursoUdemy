@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>Operadores Lógicos</h1>
+    <script>
+        {
+            /*
+            Operadores Logicos servem para conectar 
+            operções de comparação, e  operções de comparação serve para
+            tomada de decisões
+
+            => Se nas expressões conectadas com && tiver apenas UMA
+            operação false, toda a expressão será false
+            TRUE && TRUE && FALSE = FALSE
+
+            => Nas expressões conectadas com ||, para ser TRUE
+            basta apenas que uma das expressões seja TRUE
+            TRUE || TRUE || FALSE = TRUE
+
+            => Nas expressões que tem o ! antes da condição 
+            significa que ele está invertendo o valor BOOLEANO,
+            se for TRUE, com esse operador ele vai ser FALSE, 
+            e se for FALSE, com esse operador vai ser TRUE
+            !(TRUE) = FALSE
+            */
+        }
+
+        var media = 7;
+        var faltas = prompt("Qual a quantidade de faltas?");
+        var nota1 = prompt("Qual a nota o Aluno tirou?");
+        var faltasMaximas = 15;
+
+        {
+            /*
+             if (nota1 >= media && faltas <= faltasMaximas) {
+             document.write("Aluno Aprovado");
+            } else {
+             document.write("Aluno Reprovado");
+            }
+            */
+        }
+        var resultado = (nota1 >= media && faltas <= faltasMaximas) ? "Aluno Aprovado" : "Aluno Reprovado";
+        document.write(resultado);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

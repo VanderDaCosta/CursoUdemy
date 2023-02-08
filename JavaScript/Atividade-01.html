@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Atividade 01
+    </h1>
+    <script>
+        var numero1 = parseInt(prompt("Qual o primeiro numero?"));
+        var operador = prompt("Qual a operação que deseja fazer? (soma, subtracao, divisao e multiplicacao)");
+        var numero2 = parseInt(prompt("Qual o segundo numero?"));
+
+        function calc(numero1, numero2, operador) {
+
+            numero1 = parseFloat(numero1);
+            numero2 = parseFloat(numero2);
+
+            var resultado = 0;
+
+            if (operador == 'soma') {
+                resultado = numero1 + numero2;
+            } else if (operador == 'subtracao') {
+                resultado = numero1 - numero2;
+            } else if (operador == 'divisao') {
+                resultado = numero1 / numero2;
+            } else if (operador == 'multiplicacao') {
+                resultado = numero1 * numero2;
+            }
+
+            return resultado;
+        }
+
+        document.write("O resultado da operação é: " + calc(numero1, numero2, operador));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

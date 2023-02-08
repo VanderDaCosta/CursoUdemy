@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Elementos DOM
+    </h1>
+    <h3>
+        Manipulando Estilos dos Elementos.
+    </h3>
+
+</head>
+
+<body>
+    <!--TODAS ESSAS AÇÕES PODEM SER COMBINADAS UMAS COM AS OUTRAS, AS OPÇÕES SÃO INFINITAS -->
+
+    <button type="button" onclick="modificarCor('#FF0000')" style="width: 100px; background-color: aliceblue;">Vermelho</button>
+    <button type="button" onclick="modificarCor('#00FF00')" style="width: 100px; background-color: aliceblue;">Verde</button>
+    <button type="button" onclick="modificarCor('#0000FF')" style="width: 100px; background-color: aliceblue;">Azul</button>
+
+    <hr />
+
+    <div style="border: solid 1px #000; width: 300px; height: 300px; background-color: rgb(255, 255, 225);" id="quadrado"></div>
+    <script>
+        function modificarCor(corDeFundo) {
+            document.getElementById("quadrado").style.background = corDeFundo;
+        }
+    </script>
+</body>
+
+</html>

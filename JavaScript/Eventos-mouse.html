@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Eventos do mouse
+    </h1>
+    <script>
+        function acao(){
+            alert("Vapo");
+        }
+        function acao2(){
+            alert("vapissimo");
+        }
+        function acao3(){
+            alert("oi?");
+        }
+        function acao4(){
+            alert("qual é?");
+        }
+        function acao5(){
+            alert("Não saia não ein");
+        }
+    </script>
+</head>
+
+<body>
+    <!--TODAS ESSAS AÇÕES PODEM SER COMBINADAS UMAS COM AS OUTRAS, AS OPÇÕES SÃO INFINITAS -->
+
+    <!--onClick - é um evento que entra em ação quando clico com o mouse -->
+    <!--ondblClick - é um evento que entra em ação quando nosso elemenot recebe dois clicks-->
+    <!--onmouseup - é um evento que entra em ação quando o botão do mouse é solto-->
+    <!--onmouseover - é um evento que entra em ação quando o botão do mouse sobrepõe a região que ele se localiza-->
+    <!--onmouseout - é um evento que entra em ação quando o botão do mouse sai da area em que ele se localiza -->
+
+    <div onclick= "acao()" style="background: rgb(182, 6, 6); height: 150px; width: 150px;"></div>
+    <div ondblclick="acao2()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    <div onmouseup="acao3()" style="background: rgb(0, 255, 98); height: 150px; width: 150px;"></div>
+    <div onmouseover="acao4()" style="background: rgb(15, 1, 92); height: 150px; width: 150px;"></div>
+    <div onmouseout="acao5()" style="background: rgb(63, 0, 47); height: 150px; width: 150px;"></div>
+</body>
+
+</html>

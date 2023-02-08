@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <h1>
+        Funções para manipulação de Strings
+    </h1>
+    <h4>
+        Jorge Sant Ana
+    </h4>
+    <script>
+        var nome = ' Jorge Sant Ana ';
+        document.write(nome.length + "<br />");
+        document.write(nome.indexOf('g') + "<br />");//Ele indica a primeira ocorrência daquele caractere dentro da String, ele consegue diferenciar maiusculos e minusculos
+        document.write(nome.charAt(7) + "<br />"); //Ele pega o caractere dentro da cadeia de Strings usando sua posição
+        document.write(nome.replace('Sant Ana', 'Santana') + "<br />"); //Faz a substituição de cadeias de caracteres dentro da string
+        document.write(nome.substr(6, 4) + "<br />");//Ele recorta uma parte da String, o primeiro paramentro è o inicio e o outro é qunatos caracteres ele vai buscar
+        document.write(nome.toLowerCase() + "<br />"); //Converte todos os caracteres para minusculas
+        document.write(nome.toUpperCase() + "<br />"); //Converte todos os caracteres para maiusculas
+        document.write('=' + nome.trim() + '=' + "<br />"); //Remove os espaços em brancos nas Strings
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
