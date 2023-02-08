@@ -7,3 +7,6 @@ Nele acabei desenvolvendo um site para uma faculdade fake, para treinar as compe
 
 ### Curso JavaScript
 Nele acabei desenvolvendo um jogo que eu adaptei ele para minha realidade, intuito principal tambem de revisar as coisas basicas de Js e conhecer novas funcionalidades.
+
+<img src="imagens-das-linguagens/logoHTML.svg" width=100px href="https://www.w3schools.com/html/default.asp"/>
+<img src="imagens-das-linguagens/logoJS.png" width=100px href="https://www.w3schools.com/js/default.asp"/>
