@@ -1,0 +1,27 @@
+/**************
+Herança e especificidade
+________________________
+Vai ser sempre aplicado a ultima formatação
+isso quando os seletores forem iguais, exceto
+quando se usa o "!important"
+#pagina p{
+    color: red !important;
+}
+
+#pagina p{
+    color: blue;
+}*/
+/*
+Se o seletor for mais especifico que outro a regra mais específica
+será aplicada (terá precedência sobre regras mais gerais)
+*/
+h2 {
+    color: blue;
+}
+
+* {
+    color: red;
+}
+h2.verde{
+    color: green;
+}
