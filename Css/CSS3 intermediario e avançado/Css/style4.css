@@ -1,0 +1,43 @@
+/*****************
+BARRA DE NAVEGAÇÃO HORIZONTAL
+*****************/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 557px;
+    background: #159cb0 url(../navegacaoHorizontal/imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../navegacaoHorizontal/imagens/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    color: #085662;
+    background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+    background-position: right bottom;
+    color: #085662;
+    background: #44cade;
+}

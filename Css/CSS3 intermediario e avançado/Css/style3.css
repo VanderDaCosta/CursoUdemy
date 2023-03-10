@@ -1,0 +1,67 @@
+/*****************
+BARRA DE NAVEGAÇÃO VERTICAL
+*****************/
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../navegacaoVertical/imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#home #navegacao .home a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#sobre #navegacao .sobre a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#servicos #navegacao .servicos a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#noticias #navegacao .noticias a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#contato #navegacao .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
