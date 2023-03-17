@@ -8,10 +8,10 @@ body {
 }
 
 #container {
-    width: 80%;
+    width: 960px;
     /*720px*/
     margin: 0 auto;
-    background: #fff;
+    background: url(../imagens/coluna.png) repeat-y left top;
     min-width: 820px;
     max-width: 960px;
 }
@@ -31,7 +31,6 @@ body {
 }*/
 
 #conteudo {
-    border: 1px solid red;
     width: 72%;
     /*520*/
     float: right;
@@ -43,7 +42,7 @@ body {
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
+    /*background: #d1d1d1;*/
 }
 
 #conteudoPrincipal {
