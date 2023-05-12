@@ -75,15 +75,44 @@
     <section id="home" class="d-flex"><!--inicio home-->
       <div class="container align-self-center"><!--inicio container-->
         <div class="row"><!--inicio row-->
-          <div class="col-md-12 capa">
-            <h1>Música para todos</h1>
-            <a href="" class="btn btn-lg btn-custom btn-roxo">
-              Aproveite o Spotify Free
-            </a>
 
-            <a href="" class="btn btn-lg btn-custom btn-branco">
-              Obter Spotify Premium
-            </a>
+          <div class="col-md-12 capa">
+            
+            <div id="carousel-spotify" class="carousel slide" data-ride="carousel"><!--carousel-->
+              
+              <div class="carousel-inner"><!--inner-->
+                <div class="carousel-item active"><!--item-->
+                  <h1>Música para todos</h1>
+                  <a href="" class="btn btn-lg btn-custom btn-roxo">
+                    Aproveite o Spotify Free
+                  </a>
+
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    Obter Spotify Premium
+                  </a>
+                </div><!--item-->
+
+                <div class="carousel-item"><!--item-->
+                  <h1>As melhores rádios</h1>
+
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    <i class="fas fa-music mr-1"> Ouça agora</i>
+                  </a>
+                </div><!--item-->
+              </div><!--inner-->
+
+              <!--controle-->
+              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x mr-3"></i>
+              </a>
+
+              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x ml-3"></i>
+              </a>
+              <!--controle-->
+
+            </div><!--carousel-->
+          
           </div>
 
         </div><!--fim row-->
@@ -91,7 +120,7 @@
     </section><!--fim home-->
 
 
-    <section id="servicos"><!--inicio serviços-->
+    <section id="servicos" class="caixa"><!--inicio serviços-->
       <div class="container"><!--container-->
         <div class="row"><!--row-->
           <div class="col-md-6 d-none d-md-block">
@@ -129,21 +158,106 @@
     </section><!--fim serviços--> 
 
 
-    <section id="recursos"><!--inicio recursos-->
+    <section id="recursos" class="caixa"><!--inicio recursos-->
       <div class="container"><!--container-->
         <div class="row"><!--row-->
 
           <div class="col-md-4">
-            Textos
+            <H2>Fácil</H2>
+            
+            <h3>Buscar</h3>
+            <p class="text-white">
+              Já sabe o que quer escutar? É só procurar e apertar play.
+            </p>
+
+            <h3>Navegar</h3>
+            <p class="text-white">
+              Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.
+            </p>
+
+            <h3>Descobrir</h3>
+            <p class="text-white">
+              Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e curta uma das rádios.
+            </p>
+
           </div>
-          <div class="col-md-6">
-            imagens
+          <div class="col-md-8 d-none d-md-block">
+
+            <div class="row rotacionar">
+              <div class="col-md-6">
+                <img src="imagens/iphone1.png" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/iphone2.png" class="img-fluid">
+              </div>
+            </div>
+
           </div>
           
         </div><!--row-->
       </div><!--container-->
-
     </section><!--fim recursos-->
+
+    <footer id="rodape" class="caixa"><!--rodape-->
+      <div class="container"><!--container-->
+        <div class="row"><!--row-->
+
+          
+          <div class="col-md-2">
+            <img src="imagens/spotify.svg" width="142">
+          </div>
+          
+          <div class="col-md-2">
+
+            <h4>Company</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Empresas</a></li>
+              <li><a href="">Impresa</a></li>
+              <li><a href="">Novidades</a></li>
+            </ul>
+
+          </div>
+          
+
+          <div class="col-md-2">
+
+            <h4>Comunidades</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Artista</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+              <li><a href="">Marcas</a></li>
+            </ul>
+
+          </div>
+          
+          <div class="col-md-2">
+            
+            <h4>Links uteis</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Presentes</a></li>
+              <li><a href="">Player da web</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-md-4">
+            <ul>
+              <li>
+                <a href=""><img src="imagens/facebook.png"></a>
+              </li>
+              <li>
+                <a href=""><img src="imagens/twitter.png"></a>
+              </li>
+              <li>
+                <a href=""><img src="imagens/instagram.png"></a>
+              </li>
+            </ul>
+          </div>
+
+        </div><!--row-->
+      </div><!--container-->
+    </footer><!--rodape-->
 
 
 
