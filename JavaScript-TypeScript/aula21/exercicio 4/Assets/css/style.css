@@ -27,10 +27,6 @@ body{
     border-radius: 10px;
 }
 
-.container h1{
-    font-size: 1.4em;
-}
-
 form input,
 form label,
 form button{
