@@ -24,7 +24,7 @@ Exemplo:
     console.log(p1.nome, p1.sobrenome);
     console.log(p2.nome, p2.sobrenome);
 
-O Codigo acima vai imprimir no p1 'Vander Rosa'
+O Codigo acima vai imprimir no p1 'Vander Rosa', e no p2 'Lucas Vieira'.
 
 
 as duas funções são um molde para gerar novos objetos. Nas duas opções conseguimos criar atributos ou metodos privados.
