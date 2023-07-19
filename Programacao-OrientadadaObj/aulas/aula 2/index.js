@@ -34,5 +34,7 @@ const c1 = new Carro('Fusca');
 //    c1.acelerar();
 //}
 
-c1.velocidade = -1;
+c1.velocidade = 20;
+console.log(c1);
+c1.acelerar();
 console.log(c1);
