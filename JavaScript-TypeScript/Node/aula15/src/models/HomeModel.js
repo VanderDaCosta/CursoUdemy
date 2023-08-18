@@ -1,15 +1,11 @@
-// geralmente os modules são classes
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // responsável por inserir os dados no banco de dados (base de dados, tabelas, dados)
 
+// data configs
 const HomeSchema = new mongoose.Schema({
-    titulo: { type: String, require: true },
-    descricao: String
+    title: { type: String, required: true }, // tratamento e modelagem dos dados antes de salvá-lo no banco de dados (MongoDB)
+    description: String,
 });
 
-const HomeModel = mongoose.model('Home', HomeSchema);
+const HomeModel = mongoose.model('Home', HomeSchema); // 1º parâmetro é o nome do model e o 2º o nome do Schema
 
-class Home {
-
-}
-
-module.exports = Home;
+module.exports = HomeModel;

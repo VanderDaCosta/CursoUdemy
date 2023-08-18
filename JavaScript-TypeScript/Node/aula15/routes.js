@@ -1,23 +1,13 @@
 const express = require('express');
-const route = express.Router();
+const route = express.Router(); // ficará com todas as rotas da aplicação, por isso devemos exportar o "route" para o server
 const homeController = require('./src/controllers/homeController');
-const contatoController = require('./src/controllers/contatoController');
+const contactsController = require('./src/controllers/contactsController');
 
-//function meuMiddleware(req, res, next) {
-//    req.session = { nome: 'Vander', sobrenome: 'Rosa'}
-//    console.log();
-//    console.log('Passei no seu middleware');
-//    console.log();
-//    // se não colocar o next o programa vai ficar carregando
-//    // para sempre e não vai retornar nada para o cliente
-//    next();
-//}
+// Home routes
+route.get('/', homeController.initialPage);
+route.post('/', homeController.handlePost);
 
-//Rotas da home
-route.get('/', homeController.paginaInicial);
-route.post('/', homeController.trataPost);
-
-//Rotas de contato
-route.get('/contato', contatoController.paginaInicial);
+// Contacts routes
+route.get('/contacts', contactsController.initialPage);
 
 module.exports = route;
