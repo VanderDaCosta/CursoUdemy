@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-
 const mongoose = require('mongoose');
 mongoose.connect(process.env.CONNECTIONSTRING,
   {
@@ -13,7 +12,6 @@ mongoose.connect(process.env.CONNECTIONSTRING,
     app.emit('pronto');
   })
   .catch(e => console.log(e));
-
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
@@ -22,9 +20,8 @@ const path = require('path');
 // const helmet = require('helmet'); // helmet começou a causar problemas no localhost por conta da falta de SSL
 const csrf = require('csurf');
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware');
-  
 
-//app.use(helmet());
+// app.use(helmet()); // helmet começou a causar problemas no localhost por conta da falta de SSL
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -51,11 +48,11 @@ app.use(csrf());
 app.use(middlewareGlobal);
 app.use(checkCsrfError);
 app.use(csrfMiddleware);
-app.use( '/' ,routes);
+app.use(routes);
 
 app.on('pronto', () => {
-  app.listen(3000, () => {
-    console.log('Acessar http://localhost:3000');
-    console.log('Servidor executando na porta 3000');
+  app.listen(3030, () => {
+    console.log('Acessar http://localhost:3030');
+    console.log('Servidor executando na porta 3030');
   });
 });
