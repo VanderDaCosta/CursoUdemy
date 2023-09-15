@@ -15,7 +15,8 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: 'eslint-parser',
+  parser: '@babel/eslint-parser',
+  requireConfigFile: false,
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -30,6 +31,8 @@ module.exports = {
     },
   },
   rules: {
-    'react/react-in-jsx-scope': 'off',
+    'react/react-in-jsx-scope': 0,
+    'react/jsx-filename-extension': 0,
+    'react/state-in-constructor': 0
   },
 };
