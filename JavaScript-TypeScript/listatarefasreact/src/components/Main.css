@@ -64,3 +64,8 @@
   color: #f04c64;
   cursor: pointer;
 }
+
+.tarefas li span{
+  display: flex;
+  align-items: center;
+}
