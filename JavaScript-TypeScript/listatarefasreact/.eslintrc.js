@@ -33,6 +33,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': 0,
-    'react/state-in-constructor': 0
+    'react/state-in-constructor': 0,
+    'react/forbird-prop-types': 0
   },
 };

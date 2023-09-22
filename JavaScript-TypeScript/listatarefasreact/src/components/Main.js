@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
-// Tarefas
-import { FaEdit, FaWindowClose } from "react-icons/fa";
-
 import Form from "./Form";
+import Tarefas from "./Tarefas";
 
 import "./Main.css";
 import { click } from "@testing-library/user-event/dist/click";
@@ -54,7 +52,6 @@ export default class Main extends Component {
       });
     }
   }
-
   handleChange = (e) => {
     this.setState({
       novaTarefa: e.target.value,
@@ -87,25 +84,17 @@ export default class Main extends Component {
       <div className="main">
         <h1>Lista de tarefas</h1>
 
-        <Form handleSubmit={this.handleSubmit}
+        <Form
+          handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
           novaTarefa={novaTarefa}
+        />
+
+        <Tarefas
+          tarefas={tarefas}
           handleEdit={this.handleEdit}
           handleDelete={this.handleDelete}
         />
-
-        <ul className="tarefas">
-          {tarefas.map((tarefa, index) => (
-            <li key={tarefa}>
-              {tarefa}
-              <span>
-                <FaEdit onClick={(e) => this.handleEdit(e, index)} className="edit" />
-                <FaWindowClose onClick={(e) => this.handleDelete(e, index)} className="delete" />
-              </span>
-            </li>
-          ))}
-        </ul>
-
       </div>
     );
   }

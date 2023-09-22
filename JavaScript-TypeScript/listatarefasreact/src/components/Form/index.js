@@ -1,13 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FaPlus } from "react-icons/fa";
 
 import "./Form.css";
 
-
-export default function Form(props) {
+export default function Form({handleSubmit, handleChange, novaTarefa}) {
   return (
-    <form onSubmit={props.handleSubmit} action="#" className="form">
-      <input onChange={props.handleChange} type="text" value={props.novaTarefa} />
+    <form onSubmit={handleSubmit} action="#" className="form">
+      <input onChange={handleChange} type="text" value={novaTarefa} />
       <button type="submit">
         <FaPlus />
       </button>
@@ -16,3 +16,8 @@ export default function Form(props) {
   );
 }
 
+Form.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  novaTarefa: PropTypes.string.isRequired,
+}
