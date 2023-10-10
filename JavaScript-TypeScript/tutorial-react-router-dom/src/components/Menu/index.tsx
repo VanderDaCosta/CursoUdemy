@@ -6,7 +6,7 @@ export const Menu = () => {
     <nav className="menu">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" state={'esse estado vai vir da HOME'}>Home</Link>
         </li>
         <li>
           <Link to="/about" state={'This is state from ABOUT'}>
